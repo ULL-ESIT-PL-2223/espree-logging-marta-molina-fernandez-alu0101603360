@@ -25,7 +25,7 @@ for (let i = 0; i < Test.length; i++) {
     // Compile the input and check the output program is what expected
     await transpile(Test[i].input, Test[i].output);
     let output = await fs.readFile(Test[i].output, 'utf-8')
-    let expected = await fs.readFile(Test[i].expected, 'utf-8')
+    let expected = await fs.readFile(Test[i].correctLogged, 'utf-8')
     assert.equal(removeSpaces(output), removeSpaces(expected));
     await fs.unlink(Test[i].output);
 

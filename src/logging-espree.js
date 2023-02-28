@@ -17,7 +17,7 @@ export function addLogging(code) {
   const ast = espree.parse(code, { ecmaVersion: espree.latestEcmaVersion, loc: true});
   estraverse.traverse(ast, {
     enter: function(node, parent){
-      if (node.type === 'FunctionDeclaration' || node.type === 'FunctionExpression') {
+      if (node.type === 'FunctionDeclaration' || node.type === 'FunctionExpression' || node.type === 'ArrowFunctionExpression') {
         addBeforeCode(node);
       }
     }
