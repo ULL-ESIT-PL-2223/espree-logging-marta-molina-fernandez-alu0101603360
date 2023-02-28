@@ -7,7 +7,8 @@
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "fill": "your scripts here"
+        "fill": "your scripts here",
+        "test": "mocha test/test.mjs"
     },
     "dependencies": {
         "acorn": "^8.8.2",
