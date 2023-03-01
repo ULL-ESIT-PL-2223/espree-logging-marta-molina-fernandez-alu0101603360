@@ -1,7 +1,7 @@
 {
-    "name": "@alu0101603360/espree-logging",
-    "version": "0.0.0",
-    "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+    "name": "@alu01016033/espree-logging",
+    "version": "1.0.0",
+    "author": "Marta Molina Fernández <alu0101603360@ull.edu.es> (https://MartaMolina01.github.io/)",
     "description": "Adds logs to javascript code",
     "type": "module",
     "bin": {
