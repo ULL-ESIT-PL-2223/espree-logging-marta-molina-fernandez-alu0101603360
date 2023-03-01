@@ -1,0 +1,4 @@
+Entering foo(8, wut, 3) at line 1
+Entering <anonymous function>(7) at line 2
+Entering <anonymous function>(2) at line 3
+14 4
