@@ -13,7 +13,7 @@
         "cov": "c8 npm run test"
     },
     "dependencies": {
-        "acorn": "^8.8.2",
+        
         "commander": "^10.0.0",
         "escodegen": "^2.0.0",
         "espree": "^9.4.1",
