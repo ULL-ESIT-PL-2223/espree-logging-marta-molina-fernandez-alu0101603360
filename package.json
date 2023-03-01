@@ -1,5 +1,6 @@
 {
-    "name": "espree-logging-solution",
+    "name": "@alu0101603360/espree-logging",
+    "version": "0.0.0",
     "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
     "description": "Adds logs to javascript code",
     "type": "module",
@@ -23,7 +24,6 @@
         "underscore": "^1.12.0",
         "c8": "^7.13.0"
     },
-    "version": "0.3.0",
     "devDependencies": {
         "mocha": "^10.2.0"
     }
