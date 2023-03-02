@@ -1,8 +1,7 @@
 {
-    "name": "@alu0101603360/espree-logging",
+    "name": "@alu0101603360/espree-logging-solution",
     "version": "1.0.0",
-    "repository": "https://github.com/ULL-ESIT-PL-2223/espree-logging-marta-molina-fernandez-alu0101603360.git",
-    "author": "Marta Molina Fernández <alu0101603360@ull.edu.es> (https://MartaMolina01.github.io/)",
+    "author": "Marta Molina Fernández <alu0101603360@ull.edu.es> (https://github.com/MartaMolina01)",
     "description": "Adds logs to javascript code",
     "type": "module",
     "bin": {
