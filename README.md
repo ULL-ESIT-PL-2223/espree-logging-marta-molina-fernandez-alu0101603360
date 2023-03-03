@@ -174,7 +174,7 @@ Para la publicar la documentación he creído conveniente crear una [página web
 
 ## Versionado semántico en la evolución del módulo
 
-Para el versionado he usado tags con el objetivo de hacer la diferenciación de versiones. Para crear una etiqueta usamos ```bash git tag <version>``` y luego subimos la misma al repositorio con ```bash ggit push origin master --tags```. En este caso, las versiones inciales creadas son la 1.0.0 y la 1.0.1.
+Para el versionado he usado tags con el objetivo de hacer la diferenciación de versiones. Para crear una etiqueta usamos ```bash git tag <version>``` y luego subimos la misma al repositorio con ```bash ggit push origin master --tags```. En este caso, las versiones inciales creadas son la 1.0.0.
 
 ![tag](/docs/img/tag0.png)
 ![tag](/docs/img/tag1.png)
