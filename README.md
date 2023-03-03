@@ -44,7 +44,7 @@ program.parse(process.argv);
 
 ## Reto 1: Soportar funciones flecha
 
-Para soportar las fuciones ```javascript function``` y las entradas arrow ```javascript => {...} ``` se pone una condición en la función addLogging del archivo [logging-espree.js](/src/logging-espree.js):
+Para soportar las fuciones ```function``` y las entradas arrow ```=> {...} ``` se pone una condición en la función addLogging del archivo [logging-espree.js](/src/logging-espree.js):
 
 ```javascript
 if (node.type === 'FunctionDeclaration' || node.type === 'FunctionExpression' || node.type === 'ArrowFunctionExpression') {
