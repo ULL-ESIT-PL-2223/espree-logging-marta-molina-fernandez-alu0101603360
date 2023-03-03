@@ -6,6 +6,10 @@ const require = createRequire(import.meta.url);
 const { version } = require("../package.json");
 import { transpile } from "../src/logging-espree.js";
 
+/**
+ * Command line interface for the transpiler.
+ * @returns Command options
+ */
 program
   .version(version)
   .argument("<filename>", 'file with the original code')

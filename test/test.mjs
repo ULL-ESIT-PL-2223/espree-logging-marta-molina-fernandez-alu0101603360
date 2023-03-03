@@ -15,6 +15,10 @@ const Test = Tst.map(t => ({
 })
 )
 
+/**
+ * Function to remove spaces from a string.
+ * @returns {string} - String without spaces.
+ */
 function removeSpaces(s) {
   return s.replace(/\s/g, '');
 }
