@@ -60,7 +60,7 @@ Para añadir el número de línea se ha modificado la función addBeforeCode del
 ```javascript
   const beforeCode = "console.log(`Entering " + name + "(" + args + ") at line " + node.loc.start.line + "`);";
 ```
-Para que se detecte correctamente el número de línea con ```node.loc.start.line``` deberemos incluir ```{ ecmaVersion: espree.latestEcmaVersion, loc: true } ``` al parsear. En caso de no incluir el loc, no entenderá la propiedad loc.start.line y en consecuencia dará error.
+Para que se detecte correctamente el número de línea con ```node.loc.start.line``` deberemos incluir ```{ ecmaVersion: espree.latestEcmaVersion, loc: true } ``` al parsear. En caso de no incluir el loc, no entenderá la propiedad loc.start.line y en consecuencia dará error. Y la última versión de ECMA sirve para procesar el token `.
 
 ## Scripts de [package.json](package.json) <a name="scripts"></a>
 
