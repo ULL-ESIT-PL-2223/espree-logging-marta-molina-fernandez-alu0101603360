@@ -189,9 +189,11 @@ Publicar el paquete ha sido una tarea compleja pues se han dado gran cantidad de
 Finalmente, tras cambiar el ámbito de la publicación al mismo nombre de usuario de la cuenta de npm  (martamolf19), conseguí publicar el paquete. Antes de ello tuve que crear un token de acceso en github y en npm para obtener permisos sobre el repositorio y la publicación además de modificar el fichero [package.json](package.json) en numerosas ocasiones para evitar errores.
 
 Vemos el inicio de sesión en la cuenta npm desde la terminal:
+
 ![npm](/docs/img/login.png)
 
 Y el cambio más relevante en el [package.json](./package.json) en el que declaramos el ámbito:
+
 ```json
 "name": "martamolf19",
 "version": "1.0.1",
