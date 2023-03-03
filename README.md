@@ -218,7 +218,7 @@ Y el cambio más relevante en el [package.json](./package.json) en el que declar
 
 ### Publicación del paquete
 
-Publicamos con ```npm publish --access public```. Vemos que se ha publicado correctamente en la [página de npm](https://www.npmjs.com/package/martamolf19?activeTab=versions):
+Publicamos con ```npm publish --access public```. Vemos que se ha publicado correctamente en la [página de npm](https://www.npmjs.com/package/martamolf19?activeTab=readme):
 
 ![npm](/docs/img/publi_pack.png)
 ![npm](/docs/img/npm_pack_page.png)
