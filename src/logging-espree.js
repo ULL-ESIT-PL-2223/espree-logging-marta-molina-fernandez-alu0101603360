@@ -5,8 +5,8 @@ import * as fs from "fs/promises";
 
 /**
  * Transpile the input file and write the output to the output file or to the console.
- * @param {inputFile} - File with the input code to be transpiled.
- * @param {outputFile} - Optional file in which to write the output.
+ * @param {string inputFile} - File with the input code to be transpiled.
+ * @param {string outputFile} - Optional file in which to write the output.
  * @returns {Promise<void>} - A promise that resolves when the output is written or printed in the console.
  */
 export async function transpile(inputFile, outputFile) {
@@ -20,8 +20,8 @@ export async function transpile(inputFile, outputFile) {
 }
 
 /**
- * Add logging to the input code.
- * @param {code} - Code to be readed with estraverse and modified.
+ * Add logging to the input code tree.
+ * @param {string code} - Code to be readed with estraverse and modified.
  * @returns {string} - The input code with logging added.
  */
 export function addLogging(code) {
@@ -38,8 +38,8 @@ export function addLogging(code) {
 
 /**
  * Function to write in the AST.
- * @param {node} - Node to be modified.
- * @returns {void} - Modification.
+ * @param {string node} - Node to be modified.
+ * @returns {string} - Modification.
  */
 function addBeforeCode(node) {
   const name = node.id ? node.id.name : '<anonymous function>' ;
