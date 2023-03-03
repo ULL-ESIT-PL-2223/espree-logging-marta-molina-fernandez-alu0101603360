@@ -156,13 +156,13 @@ Todos los test pasan la prueba:
 
 ![test](/docs/img/test.png)
 
-### Covering
+## Covering
 
 Sobre el estudio de cobertura no hay más que comentar que lo mencionado en el [apartado](#scripts) de los scripts del [package.json](package.json) sobre el uso de c8 en lugar de nyc. Vemos el correcto funcionamiento de la herramienta:
 
 ![cov](/docs/img/cov.png)
 
-### GitHub Actions
+## GitHub Actions
 
 Para la integración continua ha sido necesario crear los directorios .github y workflows y dentro de este último el fichero [mpdejs.yml](.github/workflows/nodejs.yml). En este último fichero configuramos cómo y cuándo queremos que se ejecute la integración continua. En este caso, se ejecutará el comando ci (clean and install) y se probarán los test cada vez que se haga un push en la rama main.
   
@@ -171,6 +171,43 @@ Para la integración continua ha sido necesario crear los directorios .github y 
   - run: npm test
 ``` 
 
-### Documentación
+## Documentación
 
-Para la publicar la documentación he creído conveniente crear una [página web] gracias a ```bash documentation build src/** -f html -o docs``` y subirla a GitHub Pages.
+Para la publicar la documentación he creído conveniente crear una [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/) gracias a ```bash documentation build src/** -f html -o docs``` y subirla a GitHub Pages. El comando en cuestión genera la documentación en formato html y la guarda en el directorio docs. Luego para visualizarla en el buscador usamos ```bash npx http-server docs -p 8005```. Ovservamos parte de la [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/):
+
+![doc](/docs/img/page.png)
+
+## Versionado semántico en la evolución del módulo
+
+Para el versionado he usado tags con el objetivo de hacer la diferenciación de versiones. Para crear una etiqueta usamos ```bash git tag <version>``` y luego subimos la misma al repositorio con ```bash ggit push origin master --tags```. En este caso, las versiones inciales creadas son la 1.0.0 y la 1.0.1.
+
+![tag](/docs/img/tag0.png)
+![tag](/docs/img/tag1.png)
+
+## Publicación del paquete npmjs
+
+Publicar el paquete ha sido una tarea compleja pues se han dado gran cantidad de errores de verificación y propiedad:
+
+![npm](/docs/img/err1.png)
+![npm](/docs/img/err2.png)
+
+Finalmente, tras cambiar el ámbito de la publicación al mismo nombre de usuario de la cuenta de npm  (martamolf19), conseguí publicar el paquete. Antes de ello tuve que crear un token de acceso en github y en npm para obtener permisos sobre el repositorio y la publicación además de modificar el fichero [package.json](package.json) en numerosas ocasiones para evitar errores.
+
+![npm](/docs/img/login.png)
+
+```json
+"name": "martamolf19",
+"version": "1.0.1",
+```
+
+### Publicación del paquete
+
+Publicamos con ```bash npm publish --access public```. Vemos que se ha publicado correctamente:
+
+![npm](/docs/img/publi_pack.png)
+![npm](/docs/img/npm_pack_page.png)
+
+E instalamos el paquete publicado en la terminal con ```bash npm i martamolf19```:
+
+![npm](/docs/img/instalado_martamolf19.png)
+
