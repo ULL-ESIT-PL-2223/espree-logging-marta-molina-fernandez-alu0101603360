@@ -168,7 +168,7 @@ Para la integración continua ha sido necesario crear los directorios .github y 
 
 ## Documentación
 
-Para la publicar la documentación he creído conveniente crear una [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/) gracias a ```bash documentation build src/** -f html -o docs``` y subirla a GitHub Pages. El comando en cuestión genera la documentación en formato html y la guarda en el directorio docs. Luego para visualizarla en el buscador usamos ```bash npx http-server docs -p 8005```. Ovservamos parte de la [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/):
+Para la publicar la documentación he creído conveniente crear una [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/) gracias a ```bash documentation build src/** -f html -o docs``` y subirla a GitHub Pages. El comando en cuestión genera la documentación en formato html y la guarda en el directorio docs. Luego para visualizarla en el buscador usamos ```bash npx http-server docs -p 8005```. Observamos parte de la [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/):
 
 ![doc](/docs/img/page.png)
 
