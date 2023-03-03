@@ -74,6 +74,23 @@ Para esta práctica he visto conveniente añadir los siguientes scripts para pro
     "cov": "c8 npm run test"
 },
 ```
+Hay que mostrar que para que funcione el testeo con mocha y el covering con c8 hubo que añadir las dependencias pertinentes en el [package.json](package.json):
+```json
+"dependencies": {
+    "acorn": "^8.8.2",
+    "commander": "^10.0.0",
+    "escodegen": "^2.0.0",
+    "espree": "^9.4.1",
+    "estraverse": "^5.2.0",
+    "mocha": "^9.2.0",
+    "nyc": "^15.1.0",
+    "underscore": "^1.12.0",
+    "c8": "^7.13.0"
+},
+"devDependencies": {
+    "mocha": "^10.2.0"
+},
+```
 
 ## Tests
 
