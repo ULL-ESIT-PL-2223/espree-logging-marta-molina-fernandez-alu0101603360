@@ -1,9 +1,4 @@
 # Práctica Espree logging
-
-## Resumen de lo aprendido
-
-...
-
 ## Indicar los valores de los argumentos
 
 Se ha modificado el código de `logging-espree.js` para que el log también indique los valores de los argumentos que se pasaron a la función. 
