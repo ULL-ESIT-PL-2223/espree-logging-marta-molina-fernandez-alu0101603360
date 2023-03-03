@@ -168,13 +168,13 @@ Para la integración continua ha sido necesario crear los directorios .github y 
 
 ## Documentación
 
-Para la publicar la documentación he creído conveniente crear una [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/) gracias a ```bash documentation build src/** -f html -o docs``` y subirla a GitHub Pages. El comando en cuestión genera la documentación en formato html y la guarda en el directorio docs. Luego para visualizarla en el buscador usamos ```bash npx http-server docs -p 8005```. Observamos parte de la [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/):
+Para la publicar la documentación he creído conveniente crear una [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/) gracias a ```documentation build src/** -f html -o docs``` y subirla a GitHub Pages. El comando en cuestión genera la documentación en formato html y la guarda en el directorio docs. Luego para visualizarla en el buscador usamos ```npx http-server docs -p 8005```. Observamos parte de la [página web](https://ull-esit-pl-2223.github.io/espree-logging-marta-molina-fernandez-alu0101603360/):
 
 ![doc](/docs/img/page.png)
 
 ## Versionado semántico en la evolución del módulo
 
-Para el versionado he usado tags con el objetivo de hacer la diferenciación de versiones. Para crear una etiqueta usamos ```bash git tag <version>``` y luego subimos la misma al repositorio con ```bash ggit push origin master --tags```. En este caso, las versiones inciales creadas son la 1.0.0.
+Para el versionado he usado tags con el objetivo de hacer la diferenciación de versiones. Para crear una etiqueta usamos ```git tag <version>``` y luego subimos la misma al repositorio con ```git push origin master --tags```. En este caso, las versiones inciales creadas son la 1.0.0.
 
 ![tag](/docs/img/tag0.png)
 ![tag](/docs/img/tag1.png)
@@ -201,12 +201,12 @@ Y el cambio más relevante en el [package.json](./package.json) en el que declar
 
 ### Publicación del paquete
 
-Publicamos con ```bash npm publish --access public```. Vemos que se ha publicado correctamente:
+Publicamos con ```npm publish --access public```. Vemos que se ha publicado correctamente:
 
 ![npm](/docs/img/publi_pack.png)
 ![npm](/docs/img/npm_pack_page.png)
 
-E instalamos el paquete publicado en la terminal con ```bash npm i martamolf19```:
+E instalamos el paquete publicado en la terminal con ```npm i martamolf19```:
 
 ![npm](/docs/img/instalado_martamolf19.png)
 
