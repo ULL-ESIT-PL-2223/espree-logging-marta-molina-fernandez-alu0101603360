@@ -67,7 +67,7 @@ Para añadir el número de línea se ha modificado la función addBeforeCode del
 ```
 Para que se detecte correctamente el número de línea con ```javascript node.loc.start.line``` deberemos incluir ```javascript { ecmaVersion: espree.latestEcmaVersion, loc: true } ``` al parsear. En caso de no incluir el loc, no entenderá la propiedad loc.start.line y en consecuencia dará error.
 
-## Sccripts de [package.json](package.json) <a name="scripts"></a>
+## Scripts de [package.json](package.json) <a name="scripts"></a>
 
 Para esta práctica he visto conveniente añadir los siguientes scripts para probar los tests, ya sea individualmente (*test1*) o probando todos los ficheros de prueba (*test*). También con *test1node* vemos el resultado del primer archivo test. Por último realizamos el estudio de covertura con *npm run cov*. Para ello es importante usar c8 en lugar de nyc, como en casos anteriores, pues nyc analiza los *import* y en estos archivos importamos con *require*. c8 no tiene este problema.
 
