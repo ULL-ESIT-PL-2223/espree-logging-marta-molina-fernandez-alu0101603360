@@ -110,7 +110,7 @@ Su contenido varía únicamente en la forma de llamar al array de test. A difern
 
 Además de esta implementación he creado dos archivos de prueba más para asegurar el correcto comportamiento de las funciones. Estos archivos son [test4.js](test/data/test4.js) y [test5.js](test/data/test5.js). También han de incluirse en el fichero [test-description.mjs](./test/test-description.mjs)
 
-### test4.js
+### [test4.js](test/data/test4.js)
 
 ```javascript
 function foo(a, b) {
@@ -122,7 +122,7 @@ function foo(a, b) {
 foo(1, 'wut', 3);
 ```
 
-### test5.js
+### [test5.js](test/data/test5.js)
 
 ```javascript
 function foo(a, b, c) {
@@ -133,7 +133,7 @@ function foo(a, b, c) {
 foo(8, 'wut', 3);
 ```
 
-### test-description.mjs
+### [test-description.mjs](./test/test-description.mjs)
 
 ```javascript
 {
